@@ -1,0 +1,7 @@
+row,n_cases,amp,compile,lat_s,speedup,dice_delta,hd95_delta,vram_mb
+SegResNet baseline,8,fp32,--,5.460,1.00x,0.000000,0.000,39939.1
+Data pipeline best,8,fp32,--,5.459,1.00x,0.000000,0.000,39939.1
+AMP fp16 best,8,fp16,--,5.567,0.98x,0.000000,-0.001,38878.2
+AMP bf16,8,bf16,--,6.179,0.88x,0.000001,-0.017,38878.2
+torch.compile,8,fp32,yes,3.685,1.48x,-0.000000,-0.000,37905.4
+Combined,8,bf16,yes,3.346,1.63x,0.000001,-0.017,37689.4

@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "predictions_dir": null,
+    "profiler_trace": null
+  },
+  "compile_overhead_sec": 0.666357297450304,
+  "config_hash": "e40bd92cc770",
+  "dataset": "verse",
+  "git_sha": "unknown",
+  "gpu_util_pct_mean": 12.173076923076923,
+  "hardware": {
+    "cpu": "x86_64",
+    "cuda_version": "12.4",
+    "driver_version": "570.124.06",
+    "gpu_name": "NVIDIA H200",
+    "monai_version": "1.5.2",
+    "platform": "Linux-6.8.0-79-generic-x86_64-with-glibc2.35",
+    "ram_total_gb": 2015.549,
+    "torch_version": "2.4.1+cu124"
+  },
+  "latency_per_volume_sec_mean": 14.627034673467278,
+  "latency_per_volume_sec_p50": 14.627034673467278,
+  "latency_per_volume_sec_p95": 15.242892006598414,
+  "model": "segresnet",
+  "optimization": "all",
+  "optimization_metadata": {
+    "amp_dtype": "bf16",
+    "compile_succeeded": true,
+    "notes": "warmup consumed all cases; latency computed over all evaluated volumes",
+    "quality_delta_dice_vs_fp32": null,
+    "quality_delta_hd95_vs_fp32": null
+  },
+  "peak_vram_mb": 27535.85791015625,
+  "perturbation": {
+    "name": "downsample_resample",
+    "severity": 1
+  },
+  "phase_times_sec": {
+    "dataload": 2.6198217011988163,
+    "infer": 29.254035625606775,
+    "preprocess": 22.714682955294847,
+    "total": 80.18430933728814
+  },
+  "quality": {
+    "dice_mean": 0.0008079104635461441,
+    "dice_std": 0.0008079104635461441,
+    "hd95_mean_mm": 290.73354363175537,
+    "hd95_std_mm": 0.0,
+    "n_cases": 2
+  },
+  "run_id": "robust_20260510T174607486461Z_df2ee60559e9",
+  "seed": 42,
+  "split": "test",
+  "steady_state_latency_sec": 14.627034673467278,
+  "throughput_volumes_per_sec": 0.06836655701746239,
+  "timestamp_utc": "2026-05-10T17:46:07.489753+00:00"
+}

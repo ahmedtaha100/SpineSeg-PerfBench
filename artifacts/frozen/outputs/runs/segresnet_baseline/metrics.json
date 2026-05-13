@@ -1,0 +1,13 @@
+{
+  "phase_times_sec": {
+    "dataload": 585.6950254365802,
+    "total": 600.929512899369,
+    "train": 14.50139844417572
+  },
+  "steps": 200,
+  "throughput_steps_per_sec": 0.3328177360353606,
+  "train_case_limit": 20,
+  "train_cases_used": 20,
+  "train_loss": 3.088466781377792,
+  "val_dice": 0.0034832924287933886
+}

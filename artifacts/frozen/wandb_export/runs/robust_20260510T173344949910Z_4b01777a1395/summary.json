@@ -1,0 +1,21 @@
+{
+  "canonical_source": "frozen_bundle",
+  "dataload_s": 49.96654776111245,
+  "dice_mean": 0.002149713741314472,
+  "dice_sd": 0.0016489519110957063,
+  "gpu_util_pct": 23.693877551020407,
+  "hd95_mm": 270.20230520239005,
+  "hd95_sd_mm": 37.400204715564875,
+  "infer_s": 41.94954024255276,
+  "latency_mean_s": 5.459309084961812,
+  "latency_p50_s": 5.368346337229013,
+  "latency_p95_s": 7.016119218431413,
+  "n_cases": 8,
+  "not_live_training_run": true,
+  "preprocess_s": 10.34670976549387,
+  "source": "frozen_artifact_replay",
+  "steady_state_latency_s": 5.459309084961812,
+  "throughput_vol_per_s": 0.18317336213012655,
+  "total_runtime_s": 151.83527451008558,
+  "vram_peak_mb": 39939.0986328125
+}

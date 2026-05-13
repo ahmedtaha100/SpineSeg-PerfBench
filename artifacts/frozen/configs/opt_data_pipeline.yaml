@@ -1,0 +1,13 @@
+optimization: data_pipeline
+optimization_settings:
+  num_workers: 0
+  pin_memory: false
+  persistent_workers: false
+  prefetch_factor: 2
+  cache: none
+  sweep:
+    num_workers: [0, 2, 4, 8]
+    pin_memory: [false, true]
+    persistent_workers: [false, true]
+    prefetch_factor: [2, 4]
+    cache: [none, monai_cache, persistent_disk]

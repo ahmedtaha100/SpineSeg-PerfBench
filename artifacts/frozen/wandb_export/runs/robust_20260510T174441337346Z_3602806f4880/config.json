@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "predictions_dir": null,
+    "profiler_trace": null
+  },
+  "canonical_source": "frozen_bundle",
+  "config_hash": "a97ab269115d",
+  "dashboard_note": "Artifact-backed visualization dashboard generated from the frozen benchmark corpus; frozen bundle is the source of truth.",
+  "dataset": "verse",
+  "frozen_bundle_path": "artifacts/frozen/",
+  "git_sha": "unknown",
+  "hardware": {
+    "cpu": "x86_64",
+    "cuda_version": "12.4",
+    "driver_version": "570.124.06",
+    "gpu_name": "NVIDIA H200",
+    "monai_version": "1.5.2",
+    "platform": "Linux-6.8.0-79-generic-x86_64-with-glibc2.35",
+    "ram_total_gb": 2015.549,
+    "torch_version": "2.4.1+cu124"
+  },
+  "model": "segresnet",
+  "not_live_training_run": true,
+  "optimization": "baseline",
+  "optimization_metadata": {
+    "amp_dtype": "fp32",
+    "compile_succeeded": null,
+    "notes": "warmup consumed all cases; latency computed over all evaluated volumes",
+    "quality_delta_dice_vs_fp32": null,
+    "quality_delta_hd95_vs_fp32": null
+  },
+  "original_run_timestamp": "2026-05-10T17:44:41.340630+00:00",
+  "original_runtime_seconds": 43.69745174050331,
+  "perturbation": {
+    "name": "contrast_shift",
+    "severity": 3
+  },
+  "perturbation_name": "contrast_shift",
+  "run_id": "robust_20260510T174441337346Z_3602806f4880",
+  "seed": 42,
+  "severity": 3,
+  "source": "frozen_artifact_replay",
+  "source_json": "frozen/outputs/benchmarks/robust_20260510T174441337346Z_3602806f4880.json",
+  "split": "test"
+}

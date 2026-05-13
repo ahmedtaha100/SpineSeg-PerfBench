@@ -1,0 +1,19 @@
+# Frozen H200 run environment pins recorded in artifacts/frozen/outputs/benchmarks/*.json.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.4.1+cu124
+monai==1.5.2
+
+# Exact versions for the dependencies below were not recorded in the frozen
+# benchmark metadata; they are left unpinned to avoid inventing provenance.
+nibabel
+numpy
+scipy
+pandas
+omegaconf
+hydra-core
+tqdm
+psutil
+pyyaml
+matplotlib
+fvcore
+wandb

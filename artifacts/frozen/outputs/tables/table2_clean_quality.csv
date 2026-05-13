@@ -1,0 +1,4 @@
+row,n_cases,dice_mean,dice_std,hd95_mm,latency_s,throughput
+SegResNet baseline,8,0.002150,0.001649,270.202,5.460,0.183
+SegResNet combined,8,0.002150,0.001649,270.185,3.346,0.299
+U-Net baseline,8,0.003205,0.001427,381.501,2.740,0.365

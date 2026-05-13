@@ -1,0 +1,11 @@
+optimization,perturbation,severity,n_cases,dice_mean,hd95_mm,latency_s
+baseline,contrast\_shift,3,2,0.000849,276.794,4.529
+baseline,downsample\_resample,3,2,0.000799,290.776,4.441
+baseline,gaussian\_blur,3,2,0.000740,291.156,4.435
+baseline,gaussian\_noise,3,2,0.000821,290.748,4.434
+baseline,intensity\_shift,3,2,0.000132,313.103,4.441
+combined,contrast\_shift,3,2,0.000849,276.923,8.140
+combined,downsample\_resample,3,2,0.000799,290.785,8.925
+combined,gaussian\_blur,3,2,0.000739,291.099,8.333
+combined,gaussian\_noise,3,2,0.000822,290.755,7.853
+combined,intensity\_shift,3,2,0.000132,313.100,7.976

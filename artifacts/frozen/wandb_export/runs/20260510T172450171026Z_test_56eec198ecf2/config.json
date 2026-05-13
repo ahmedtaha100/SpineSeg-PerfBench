@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "predictions_dir": null,
+    "profiler_trace": null
+  },
+  "canonical_source": "frozen_bundle",
+  "config_hash": "0a7e12ec55f8",
+  "dashboard_note": "Artifact-backed visualization dashboard generated from the frozen benchmark corpus; frozen bundle is the source of truth.",
+  "dataset": "verse",
+  "frozen_bundle_path": "artifacts/frozen/",
+  "git_sha": "unknown",
+  "hardware": {
+    "cpu": "x86_64",
+    "cuda_version": "12.4",
+    "driver_version": "570.124.06",
+    "gpu_name": "NVIDIA H200",
+    "monai_version": "1.5.2",
+    "platform": "Linux-6.8.0-79-generic-x86_64-with-glibc2.35",
+    "ram_total_gb": 2015.549,
+    "torch_version": "2.4.1+cu124"
+  },
+  "model": "segresnet",
+  "not_live_training_run": true,
+  "optimization": "amp",
+  "optimization_metadata": {
+    "amp_dtype": "bf16",
+    "compile_succeeded": null,
+    "notes": null,
+    "quality_delta_dice_vs_fp32": 6.103099124124198e-07,
+    "quality_delta_hd95_vs_fp32": -0.01688903670083164
+  },
+  "original_run_timestamp": "2026-05-10T17:26:49.190144+00:00",
+  "original_runtime_seconds": 118.86909175664186,
+  "perturbation": null,
+  "perturbation_name": "clean",
+  "run_id": "20260510T172450171026Z_test_56eec198ecf2",
+  "seed": 42,
+  "severity": 0,
+  "source": "frozen_artifact_replay",
+  "source_json": "frozen/outputs/benchmarks/20260510T172450171026Z_test_56eec198ecf2.json",
+  "split": "test"
+}

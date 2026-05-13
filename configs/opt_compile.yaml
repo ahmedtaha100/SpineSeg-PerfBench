@@ -1,0 +1,5 @@
+optimization: compile
+optimization_settings:
+  compile: true
+  compile_mode: reduce-overhead
+  amp_dtype: fp32

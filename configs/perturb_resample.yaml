@@ -1,0 +1,3 @@
+perturbation:
+  name: downsample_resample
+  severity: 1

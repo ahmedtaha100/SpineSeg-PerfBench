@@ -1,0 +1,10 @@
+case_id,image_path,label_path,dataset_source,spacing_x,spacing_y,spacing_z,shape_x,shape_y,shape_z
+sub_gl047_dir_ax,${VERSE_ROOT}/rawdata/sub-gl047/sub-gl047_dir-ax_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-gl047/sub-gl047_dir-ax_seg-vert_msk.nii.gz,verse,0.298828,0.298828,1.250000,512,512,181
+sub_verse500_dir_ax,${VERSE_ROOT}/rawdata/sub-verse500/sub-verse500_dir-ax_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse500/sub-verse500_dir-ax_seg-vert_msk.nii.gz,verse,0.683594,0.683594,0.900000,512,512,542
+sub_verse521_dir_ax,${VERSE_ROOT}/rawdata/sub-verse521/sub-verse521_dir-ax_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse521/sub-verse521_dir-ax_seg-vert_msk.nii.gz,verse,0.683594,0.683594,1.000000,512,512,487
+sub_verse534_dir_iso,${VERSE_ROOT}/rawdata/sub-verse534/sub-verse534_dir-iso_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse534/sub-verse534_dir-iso_seg-vert_msk.nii.gz,verse,0.888672,0.888672,0.900000,512,512,506
+sub_verse535_dir_iso,${VERSE_ROOT}/rawdata/sub-verse535/sub-verse535_dir-iso_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse535/sub-verse535_dir-iso_seg-vert_msk.nii.gz,verse,0.912109,0.912109,0.900000,512,512,550
+sub_verse584_dir_ax,${VERSE_ROOT}/rawdata/sub-verse584/sub-verse584_dir-ax_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse584/sub-verse584_dir-ax_seg-vert_msk.nii.gz,verse,0.976562,0.976562,0.900000,512,512,545
+sub_verse594_dir_ax,${VERSE_ROOT}/rawdata/sub-verse594/sub-verse594_dir-ax_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse594/sub-verse594_dir-ax_seg-vert_msk.nii.gz,verse,0.716797,0.716797,0.900000,512,512,583
+sub_verse631,${VERSE_ROOT}/rawdata/sub-verse631/sub-verse631_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse631/sub-verse631_seg-vert_msk.nii.gz,verse,0.685547,0.685714,2.000000,512,1190,158
+sub_verse642_dir_sag,${VERSE_ROOT}/rawdata/sub-verse642/sub-verse642_dir-sag_ct.nii.gz,${VERSE_ROOT}/derivatives/sub-verse642/sub-verse642_dir-sag_seg-vert_msk.nii.gz,verse,0.375000,0.375067,3.000157,512,1869,125

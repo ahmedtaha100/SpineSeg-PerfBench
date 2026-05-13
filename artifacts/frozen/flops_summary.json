@@ -1,0 +1,58 @@
+{
+  "patch_size": [
+    96,
+    96,
+    96
+  ],
+  "in_channels": 1,
+  "models": {
+    "segresnet": {
+      "params_M": 4.701,
+      "flops_per_patch_G": 62.116,
+      "macs_per_patch_G": 31.058,
+      "patches_per_volume_estimate": 670,
+      "flops_per_volume_G": 41617.4,
+      "unsupported_ops": [
+        "aten::add: 3",
+        "aten::add_: 12",
+        "aten::feature_dropout: 1",
+        "aten::upsample_trilinear3d: 3"
+      ],
+      "tool": "fvcore.nn.FlopCountAnalysis",
+      "weight_bytes_fp32": 18805288,
+      "leaf_activation_bytes_fp32": 1496530944,
+      "arithmetic_intensity_flops_per_byte": 40.99,
+      "tool_warnings": "Unsupported operator aten::feature_dropout encountered 1 time(s)\nUnsupported operator aten::add_ encountered 12 time(s)\nUnsupported operator aten::upsample_trilinear3d encountered 3 time(s)\nUnsupported operator aten::add encountered 3 time(s)"
+    },
+    "unet3d": {
+      "params_M": 4.845,
+      "flops_per_patch_G": 23.595,
+      "macs_per_patch_G": 11.797,
+      "patches_per_volume_estimate": 670,
+      "flops_per_volume_G": 15808.5,
+      "unsupported_ops": [
+        "aten::add: 9",
+        "aten::prelu: 17"
+      ],
+      "tool": "fvcore.nn.FlopCountAnalysis",
+      "weight_bytes_fp32": 19381636,
+      "leaf_activation_bytes_fp32": 722276352,
+      "arithmetic_intensity_flops_per_byte": 31.81,
+      "tool_warnings": "Unsupported operator aten::prelu encountered 17 time(s)\nUnsupported operator aten::add encountered 9 time(s)"
+    }
+  },
+  "notes": "FLOPs are computed on the bare MONAI model with a single fp32 patch-shaped input tensor, not through the sliding-window inferer. MACs are reported as FLOPs/2. Per-volume estimates use the median patch count from 8 frozen test cases after resampling manifest shapes to [1.0, 1.0, 1.0] mm spacing with overlap=0.5. Arithmetic intensity uses FLOPs divided by fp32 trainable-parameter bytes plus leaf-module output activation bytes for one forward pass; this is a proxy, not a hardware roofline measurement.",
+  "volume_patch_estimate": {
+    "source": "artifacts/frozen/outputs/manifests/split_test.csv",
+    "n_cases": 8,
+    "median_resampled_shape": [
+      384,
+      400,
+      511
+    ],
+    "median_patches_per_volume": 670,
+    "mean_patches_per_volume": 655.0,
+    "min_patches_per_volume": 20,
+    "max_patches_per_volume": 1134
+  }
+}

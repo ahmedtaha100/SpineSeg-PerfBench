@@ -1,0 +1,3 @@
+perturbation:
+  name: gaussian_blur
+  severity: 1

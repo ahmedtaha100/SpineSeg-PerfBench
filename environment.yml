@@ -1,0 +1,23 @@
+name: spineseg-perfbench
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - pyyaml
+  - matplotlib
+  - psutil
+  - tqdm
+  - pytorch
+  - pip:
+      - monai
+      - nibabel
+      - omegaconf
+      - hydra-core
+      - pytest
+      - fvcore
+      - wandb

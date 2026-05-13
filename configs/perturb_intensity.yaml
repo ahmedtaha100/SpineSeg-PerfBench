@@ -1,0 +1,3 @@
+perturbation:
+  name: intensity_shift
+  severity: 1

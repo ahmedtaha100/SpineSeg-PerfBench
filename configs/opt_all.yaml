@@ -1,0 +1,10 @@
+optimization: all
+optimization_settings:
+  num_workers: 2
+  pin_memory: true
+  persistent_workers: true
+  prefetch_factor: 2
+  cache: monai_cache
+  amp_dtype: bf16
+  compile: true
+  compile_mode: reduce-overhead

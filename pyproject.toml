@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spineseg-perfbench"
+version = "0.1.0"
+description = "Reproducible accuracy, robustness, and efficiency benchmark for 3D vertebra segmentation."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "torch",
+  "monai",
+  "nibabel",
+  "numpy",
+  "scipy",
+  "pandas",
+  "omegaconf",
+  "hydra-core",
+  "tqdm",
+  "psutil",
+  "pyyaml",
+  "matplotlib",
+  "pytest",
+  "fvcore",
+  "wandb",
+]
+
+[project.optional-dependencies]
+wandb = []
+
+[tool.setuptools.packages.find]
+include = ["spineseg_perfbench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

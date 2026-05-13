@@ -1,0 +1,39 @@
+seed: 42
+device: auto
+dataset: synthetic
+model: segresnet
+optimization: baseline
+output_dir: outputs
+artifacts_dir: artifacts
+manifest:
+  all: outputs/manifests/data_manifest.csv
+  train: outputs/manifests/split_train.csv
+  val: outputs/manifests/split_val.csv
+  test: outputs/manifests/split_test.csv
+preprocess:
+  spacing: [1.0, 1.0, 1.0]
+  clip_min: -1024
+  clip_max: 3071
+  patch_size: [96, 96, 96]
+smoke:
+  enabled: false
+  shape: [16, 16, 16]
+  patch_size: [16, 16, 16]
+  n_cases: 4
+  max_train_steps: 2
+training:
+  epochs: 50
+  smoke_epochs: 1
+  batch_size: 2
+  smoke_batch_size: 1
+  lr: 0.0001
+  weight_decay: 0.00001
+  seeds: [42, 1337, 2024]
+inference:
+  overlap: 0.5
+  mode: gaussian
+  warmup_volumes: 2
+  smoke_warmup_volumes: 0
+  save_predictions: false
+wandb:
+  enabled: false

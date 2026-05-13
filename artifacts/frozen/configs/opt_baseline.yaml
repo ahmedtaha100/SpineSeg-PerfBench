@@ -1,0 +1,5 @@
+optimization: baseline
+optimization_settings:
+  cache: none
+  amp_dtype: fp32
+  compile: false

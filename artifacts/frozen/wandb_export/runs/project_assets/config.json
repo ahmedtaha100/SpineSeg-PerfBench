@@ -1,0 +1,7 @@
+{
+  "canonical_source": "frozen_bundle",
+  "dashboard_note": "Artifact-backed visualization dashboard generated from the frozen benchmark corpus; frozen bundle is the source of truth.",
+  "frozen_bundle_path": "artifacts/frozen/",
+  "not_live_training_run": true,
+  "source": "frozen_artifact_replay"
+}

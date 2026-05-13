@@ -1,0 +1,29 @@
+{
+  "category": "robustness",
+  "created_at": "2026-05-12T10:33:44Z",
+  "duration": null,
+  "group": "segresnet",
+  "heartbeat_at": "2026-05-12T11:07:17Z",
+  "id": "robust_20260510T174816585969Z_cbc33cd4779b",
+  "job_type": "robustness",
+  "name": "robust_20260510T174816585969Z_cbc33cd4779b",
+  "notes": "Derived artifact-backed visualization row. This is not a live training or live inference run; values are replayed from the frozen benchmark corpus.",
+  "path": [
+    "ahmedtaeha2",
+    "spineseg-perfbench",
+    "robust_20260510T174816585969Z_cbc33cd4779b"
+  ],
+  "state": "finished",
+  "tags": [
+    "all",
+    "canonical_source=frozen_bundle",
+    "downsample_resample",
+    "not_live_training_run=true",
+    "segresnet",
+    "severity_3",
+    "source=frozen_artifact_replay"
+  ],
+  "updated_at": null,
+  "url": "https://wandb.ai/ahmedtaeha2/spineseg-perfbench/runs/robust_20260510T174816585969Z_cbc33cd4779b",
+  "user": "ahmedtaeha"
+}

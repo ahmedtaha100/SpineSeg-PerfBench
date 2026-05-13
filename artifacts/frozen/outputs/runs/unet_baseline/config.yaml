@@ -1,0 +1,54 @@
+artifacts_dir: artifacts
+dataset: verse2020_training_paired
+device: auto
+inference:
+  mode: gaussian
+  overlap: 0.5
+  save_predictions: false
+  smoke_warmup_volumes: 0
+  warmup_volumes: 2
+manifest:
+  all: outputs/manifests/data_manifest.csv
+  test: outputs/manifests/split_test.csv
+  train: outputs/manifests/split_train.csv
+  val: outputs/manifests/split_val.csv
+model: unet
+optimization: baseline
+output_dir: outputs
+preprocess:
+  clip_max: 3071
+  clip_min: -1024
+  patch_size:
+  - 96
+  - 96
+  - 96
+  spacing:
+  - 1.0
+  - 1.0
+  - 1.0
+seed: 42
+smoke:
+  enabled: false
+  max_train_steps: 2
+  n_cases: 4
+  patch_size:
+  - 16
+  - 16
+  - 16
+  shape:
+  - 16
+  - 16
+  - 16
+training:
+  batch_size: 4
+  epochs: 10
+  lr: 0.0001
+  seeds:
+  - 42
+  - 1337
+  - 2024
+  smoke_batch_size: 1
+  smoke_epochs: 1
+  weight_decay: 1.0e-05
+wandb:
+  enabled: false
